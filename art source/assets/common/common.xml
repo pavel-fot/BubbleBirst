@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with TexturePacker http://www.codeandweb.com/texturepacker-->
+<!-- $TexturePacker:SmartUpdate:2697b842f9577fc47ab403c20483f621:ce568b7553e659bc577ebafd1aa510b4:071684f9feb4b75c21246cadd43ff572$ -->
+<TextureAtlas imagePath="common.png" width="498" height="123">
+    <SubTexture name="bubble0" x="2" y="2" width="70" height="70"/>
+    <SubTexture name="bubble1" x="74" y="2" width="70" height="70"/>
+    <SubTexture name="bubble2" x="146" y="2" width="70" height="70"/>
+    <SubTexture name="bubble3" x="218" y="2" width="70" height="70"/>
+    <SubTexture name="bubble4" x="290" y="2" width="70" height="70"/>
+    <SubTexture name="bubble5" x="362" y="2" width="70" height="70"/>
+    <SubTexture name="coin" x="434" y="2" width="62" height="68"/>
+    <SubTexture name="plusBtn" x="2" y="74" width="34" height="34"/>
+    <SubTexture name="topPlateNum" x="38" y="74" width="210" height="47"/>
+</TextureAtlas>
