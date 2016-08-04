@@ -5,7 +5,9 @@ package screens
 {
     import game.field.GameField;
 
-    import starling.display.Sprite;
+import starling.display.Image;
+
+import starling.display.Sprite;
 
     import ui.com.DisplayComponent;
 import ui.toppanel.TopPanel;
@@ -14,19 +16,23 @@ import ui.toppanel.TopPanel;
     {
         private var topPanel:TopPanel;
         private var gameField:GameField;
+        private var bg:Image;
 
         public function GameScreen()
         {
-
+            textures = ['level'];
         }
 
         override protected function onCreate():void
         {
+            bg = assetManager.getImage('levelBg');
+            addChild(bg);
+
             gameField = new GameField();
             gameField.init();
             addChild(gameField);
-            gameField.x = 300;
-            gameField.y = 100;
+            gameField.x = 190;
+            gameField.y = 140;
 
             topPanel = new TopPanel();
             addChild(topPanel);

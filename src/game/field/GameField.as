@@ -21,8 +21,8 @@ package game.field
     
     public class GameField extends DisplayComponent
     {
-        private static const FIELD_WIDTH:int = 10;//25;
-        private static const FIELD_HEIGHT:int = 10;//25;
+        private static const FIELD_WIDTH:int = 25;
+        private static const FIELD_HEIGHT:int = 25;
         
         private var field:Array;
         // layers ----------------------------------------------
@@ -49,6 +49,7 @@ package game.field
             addChild(itemsBurstLayer);
 
             initField();
+            drawBackground();
             fillFieldRandom();
         }
         
@@ -75,6 +76,13 @@ package game.field
                     cell.y = FieldCell.SIZE * j;
                 }
             }
+        }
+
+        private function drawBackground():void
+        {
+            var q:Quad = new Quad(FIELD_WIDTH * FieldCell.SIZE, FIELD_HEIGHT * FieldCell.SIZE, 0xffffff);
+            addChildAt(q, 0);
+            q.alpha = 0.4;
         }
 
         private function fillFieldRandom():void

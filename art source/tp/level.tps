@@ -6,7 +6,7 @@
         <key>texturePackerVersion</key>
         <string>4.2.2</string>
         <key>fileName</key>
-        <string>/Projects/BubbleBurst/art source/tp/common.tps</string>
+        <string>/Projects/BubbleBurst/art source/tp/level.tps</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -28,7 +28,7 @@
             </struct>
         </array>
         <key>allowRotation</key>
-        <false/>
+        <true/>
         <key>shapeDebug</key>
         <false/>
         <key>dpi</key>
@@ -70,7 +70,7 @@
             </struct>
         </struct>
         <key>shapePadding</key>
-        <uint>2</uint>
+        <uint>0</uint>
         <key>jpgQuality</key>
         <uint>80</uint>
         <key>pngOptimizationLevel</key>
@@ -82,7 +82,7 @@
         <key>textureFormat</key>
         <enum type="SettingsBase::TextureFormat">png</enum>
         <key>borderPadding</key>
-        <uint>2</uint>
+        <uint>0</uint>
         <key>maxTextureSize</key>
         <QSize>
             <key>width</key>
@@ -141,7 +141,7 @@
             <key>data</key>
             <struct type="DataFile">
                 <key>name</key>
-                <filename>../assets/common/common.xml</filename>
+                <filename>../../assets/level/level.xml</filename>
             </struct>
         </map>
         <key>multiPack</key>
@@ -188,16 +188,7 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../bubbles/bubble0.png</key>
-            <key type="filename">../bubbles/bubble1.png</key>
-            <key type="filename">../bubbles/bubble2.png</key>
-            <key type="filename">../bubbles/bubble3.png</key>
-            <key type="filename">../bubbles/bubble4.png</key>
-            <key type="filename">../bubbles/bubble5.png</key>
-            <key type="filename">../coin.png</key>
-            <key type="filename">../heart.png</key>
-            <key type="filename">../plusBtn.png</key>
-            <key type="filename">../top/topPlateNum.png</key>
+            <key type="filename">../level/levelBg.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -205,16 +196,7 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>../bubbles/bubble0.png</filename>
-            <filename>../bubbles/bubble1.png</filename>
-            <filename>../bubbles/bubble2.png</filename>
-            <filename>../bubbles/bubble3.png</filename>
-            <filename>../bubbles/bubble4.png</filename>
-            <filename>../bubbles/bubble5.png</filename>
-            <filename>../coin.png</filename>
-            <filename>../top/topPlateNum.png</filename>
-            <filename>../plusBtn.png</filename>
-            <filename>../heart.png</filename>
+            <filename>../level/levelBg.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

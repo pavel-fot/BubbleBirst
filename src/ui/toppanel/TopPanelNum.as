@@ -5,25 +5,25 @@ package ui.toppanel
 {
 	import starling.display.Image;
 	import starling.display.Sprite;
-import starling.filters.DropShadowFilter;
-import starling.text.TextField;
-import starling.text.TextFieldAutoSize;
-import starling.text.TextFormat;
-import starling.utils.Align;
+	import starling.filters.DropShadowFilter;
+	import starling.text.TextField;
+	import starling.text.TextFieldAutoSize;
+	import starling.text.TextFormat;
+	import starling.utils.Align;
 
-import ui.Button;
+	import ui.Button;
 
 	import ui.com.DisplayComponent;
 
-import utils.TextFieldFactory;
+	import utils.TextFieldFactory;
 
-public class TopPanelNum extends DisplayComponent
+	public class TopPanelNum extends DisplayComponent
 	{
 		protected var plate:Sprite;
 		private var plateBg:Image;
 		private var addBtn:Button;
 		private var _showAddButton:Boolean;
-		private var tf:TextField;
+		protected var tf:TextField;
 
 		public function TopPanelNum()
 		{
@@ -37,7 +37,7 @@ public class TopPanelNum extends DisplayComponent
 			plateBg = assetManager.getImage('topPlateNum');
 			plate.addChild(plateBg);
 
-			tf = TextFieldFactory.create(TextFieldFactory.SKRANJI_BOLD, '99999', 25, 0xffffff, TextFieldAutoSize.VERTICAL, Align.RIGHT);
+			tf = TextFieldFactory.create(TextFieldFactory.SKRANJI_BOLD, '0', 25, 0xffffff, TextFieldAutoSize.VERTICAL, Align.RIGHT);
 			tf.width = 110;
 			tf.x = 43;
 			tf.y = plate.height / 2 - tf.height / 2 + 1;

@@ -8,6 +8,7 @@ package ui.toppanel
 	public class TopPanel extends DisplayComponent
 	{
 		private var coinsPanel:TopPanelCoins;
+		private var lifePanel:TopPanelLife;
 
 		public function TopPanel()
 		{
@@ -22,6 +23,13 @@ package ui.toppanel
 			coinsPanel.init();
 			coinsPanel.x = 20;
 			coinsPanel.y = 10;
+
+			lifePanel = new TopPanelLife();
+			addChild(lifePanel);
+			lifePanel.assetManager = assetManager;
+			lifePanel.init();
+			lifePanel.x = coinsPanel.x + coinsPanel.width + 20;
+			lifePanel.y = 17;
 		}
 	}
 }

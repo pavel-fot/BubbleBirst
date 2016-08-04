@@ -52,7 +52,7 @@ import utils.SystemManager;
             Cc.config.tracing = true;
 
             var resourceManager:ResourceManager = new ResourceManager();
-            resourceManager.loadRootPathURL = 'http://bburst.local:8888/dev/assets/';
+            resourceManager.loadRootPathURL = 'http://bubbles.4s2.ru/dev/assets/';
             SystemManager.resourceManager = resourceManager;
 
             var g:GameScreen = new GameScreen();

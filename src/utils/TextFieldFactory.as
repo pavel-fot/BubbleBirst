@@ -20,7 +20,7 @@ package utils
 		public static function create(fontName:String = 'Verdana', text:String = '', size:int = 14, color:uint = 0x0, autoSize:String = 'bothDirections',
 										horizontalAlign:String = 'center', verticalAlign:String = 'center'):TextField
 		{
-			var tf = new TextField(100, 100);
+			var tf:TextField = new TextField(100, 100);
 			tf.autoSize = autoSize;
 			tf.text = text;
 			var tFormat:TextFormat = new TextFormat(fontName, size, color, horizontalAlign, verticalAlign);
